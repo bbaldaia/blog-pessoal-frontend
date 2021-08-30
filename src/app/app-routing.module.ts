@@ -3,11 +3,14 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
 
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { InicioComponent } from './inicio/inicio.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'entrar', pathMatch: 'full'},
   {path: 'cadastrar', component: CadastrarComponent},
-  {path: 'entrar', component: EntrarComponent}
+  {path: 'entrar', component: EntrarComponent},
+  
+  {path: 'inicio', component: InicioComponent}
 ];
 
 @NgModule({
